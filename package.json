@@ -1,6 +1,7 @@
 {
-  "name": "rest-express",
+  "name": "room-arrange-game",
   "version": "1.0.0",
+  "description": "An interactive furniture arrangement game where you can drag, drop, and rotate furniture items in a virtual room",
   "type": "module",
   "license": "MIT",
   "scripts": {
@@ -100,7 +101,6 @@
     "zustand": "^5.0.3"
   },
   "devDependencies": {
-    "@replit/vite-plugin-runtime-error-modal": "^0.0.3",
     "@tailwindcss/typography": "^0.5.15",
     "@types/connect-pg-simple": "^7.0.3",
     "@types/express": "4.17.21",
