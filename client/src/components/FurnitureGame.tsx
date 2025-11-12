@@ -283,8 +283,8 @@ export function FurnitureGame() {
 
   return (
     <div className="flex items-start justify-center min-h-screen bg-white p-4 gap-4">
-      <div className="bg-slate-700 rounded-lg shadow-2xl p-4 space-y-3 w-64">
-        <h2 className="text-xl font-bold text-white text-center" style={{ fontFamily: 'monospace' }}>
+      <div className="bg-white rounded-lg shadow-2xl p-4 space-y-3 w-64 border border-gray-200">
+        <h2 className="text-xl font-bold text-gray-800 text-center" style={{ fontFamily: 'monospace' }}>
           ROOM SIZE
         </h2>
         <div className="grid grid-cols-3 gap-2">
@@ -295,7 +295,7 @@ export function FurnitureGame() {
               className={`font-bold py-2 text-xs ${
                 roomSize === size
                   ? 'bg-cyan-600 hover:bg-cyan-700'
-                  : 'bg-slate-600 hover:bg-slate-500'
+                  : 'bg-gray-300 hover:bg-gray-400 text-gray-800'
               }`}
               style={{ fontFamily: 'monospace' }}
             >
@@ -304,7 +304,7 @@ export function FurnitureGame() {
           ))}
         </div>
 
-        <h2 className="text-xl font-bold text-white text-center mt-4" style={{ fontFamily: 'monospace' }}>
+        <h2 className="text-xl font-bold text-gray-800 text-center mt-4" style={{ fontFamily: 'monospace' }}>
           ADD FURNITURE
         </h2>
         <div className="grid grid-cols-2 gap-2">
@@ -322,22 +322,22 @@ export function FurnitureGame() {
         </div>
       </div>
 
-      <div className="bg-slate-700 rounded-lg shadow-2xl p-6 space-y-4">
+      <div className="bg-white rounded-lg shadow-2xl p-6 space-y-4 border border-gray-200">
         <div className="flex items-center justify-between mb-4">
-          <h1 className="text-3xl font-bold text-white" style={{ fontFamily: 'monospace' }}>
+          <h1 className="text-3xl font-bold text-gray-800" style={{ fontFamily: 'monospace' }}>
             ROOM DESIGNER
           </h1>
           <Button
             onClick={toggleMute}
             variant="outline"
             size="icon"
-            className="bg-slate-600 hover:bg-slate-500 border-slate-500"
+            className="bg-gray-200 hover:bg-gray-300 border-gray-300"
           >
-            {isMuted ? <VolumeX className="h-4 w-4 text-white" /> : <Volume2 className="h-4 w-4 text-white" />}
+            {isMuted ? <VolumeX className="h-4 w-4 text-gray-700" /> : <Volume2 className="h-4 w-4 text-gray-700" />}
           </Button>
         </div>
 
-        <div className="bg-slate-800 p-2 rounded">
+        <div className="bg-gray-100 p-2 rounded">
           <canvas
             ref={canvasRef}
             width={ROOM_WIDTH}
@@ -346,7 +346,7 @@ export function FurnitureGame() {
             onMouseMove={handleMouseMove}
             onMouseUp={handleMouseUp}
             onMouseLeave={handleMouseUp}
-            className="cursor-move border-4 border-slate-600 rounded"
+            className="cursor-move border-4 border-gray-300 rounded"
             style={{ imageRendering: 'pixelated' }}
           />
         </div>
@@ -400,7 +400,7 @@ export function FurnitureGame() {
           </Button>
         </div>
 
-        <div className="bg-slate-800 p-3 rounded text-sm text-gray-300" style={{ fontFamily: 'monospace' }}>
+        <div className="bg-gray-100 p-3 rounded text-sm text-gray-700" style={{ fontFamily: 'monospace' }}>
           <p>• Click and drag furniture to move (snaps to grid)</p>
           <p>• Press R or click ROTATE to rotate selected item</p>
           <p>• Hover over furniture for orange highlight</p>
