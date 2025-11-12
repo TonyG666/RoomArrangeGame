@@ -282,7 +282,7 @@ export function FurnitureGame() {
   };
 
   return (
-    <div className="flex items-start justify-center min-h-screen bg-gradient-to-br from-slate-800 to-slate-900 p-4 gap-4">
+    <div className="flex items-start justify-center min-h-screen bg-white p-4 gap-4">
       <div className="bg-slate-700 rounded-lg shadow-2xl p-4 space-y-3 w-64">
         <h2 className="text-xl font-bold text-white text-center" style={{ fontFamily: 'monospace' }}>
           ROOM SIZE
